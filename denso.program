@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+   int amnt,discount,sum=0;
+   scanf("%d%d",&amnt,&discount);
+   discount=100-discount;
+   while(amnt>0)
+   {
+       sum=sum+amnt;
+       amnt=(discount*amnt)/100;
+   }
+   printf("%d",sum);
+   return 0;
+}
